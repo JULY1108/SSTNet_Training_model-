@@ -6,9 +6,11 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `weights/SSTNet_detector.pt` | TorchScript 推理模型（模型归档名为 `0909_detector`，输入为 256×256） |
+| `weights/SSTNet_detector.pt` | 本仓库作者在复现 SSTNet 的过程中自行训练并导出的 TorchScript 推理模型，输入为 256×256 |
 | `weights/pre-trained_SSTNet_DAUB.pth` | DAUB 训练权重 |
 | `model_data/pre_trained.pth` | 训练初始化用的预训练权重 |
+
+其中，`weights/SSTNet_detector.pt` 是我基于 SSTNet 网络完成训练后导出的推理模型，是本复现项目的主要成果。使用该模型时，请同时注明本仓库的模型来源并引用原始 SSTNet 论文。
 
 演示视频和 Python 缓存不提交到仓库。训练与评估脚本中的数据集路径需要按本机目录修改。下方原始 SSTNet 项目介绍、论文指标和引用信息用于说明上游工作；它们不是本复现的独立评测结果。
 
